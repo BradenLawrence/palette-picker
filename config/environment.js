@@ -3,6 +3,14 @@
 
 module.exports = function(environment) {
   let ENV = {
+    contentSecurityPolicy: {
+        'script-src':  "*",
+        'font-src':    "*",
+        'connect-src': "'self' wss://ember-workspace-blip.c9users.io:8081/",
+        'style-src':   "'self' https://ember-workspace-blip.c9users.io:8081/",
+        'object-src':  "*",
+        'img-src':     "*"
+    },
     modulePrefix: 'palette-picker',
     environment,
     rootURL: '/',
