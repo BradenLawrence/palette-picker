@@ -2,15 +2,17 @@
   <div class="right tomster"></div>
   <h2>Welcome to Palette Picker!</h2>
   <p>There's no content yet. So until then just pick your nose.</p>
-  {{#each model as |palette|}}
-      <article>
-          <h3>{{palette.title}}</h3>
-          <h4>by {{palette.designer}}</h4>
-          <ul>
-              {{#each palette.colors as |color|}}
-                  <li>{{color}}</li>
-              {{/each}}
-          </ul>
-      </article>
-  {{/each}}
+  <div class="article-list">
+      {{#each model as |palette|}}
+          <article class="listing">
+              <h3>{{palette.title}}</h3>
+              <h4>by {{palette.designer}}</h4>
+              <ul>
+                  {{#each palette.colors as |color|}}
+                      <li>{{color}}</li>
+                  {{/each}}
+              </ul>
+          </article>
+      {{/each}}
+  </div>
 </div>
