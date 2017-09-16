@@ -6,19 +6,22 @@ export default Ember.Route.extend({
                 id:         'sunset-at-sea',
                 title:      'Sunset at Sea',
                 designer:   'Lothario',
-                colors:     ['yellow', 'orange','blue']
+                colors:     ['yellow', 'orange','blue'],
+                img:        '/assets/images/gradient1.jpg'
                 },
                 {
                 id:         'party-time',
                 title:      'Party Time',
                 designer:   'Anselmo',
-                colors:     ['blue', 'pink', 'purple']
+                colors:     ['blue', 'pink', 'purple'],
+                img:        '/assets/images/gradient2.jpg'
                 },
                 {
                 id:         'halloween-night',
                 title:      'Halloween Night',
                 designer:   'Camilla',
-                colors:     ['orange', 'brown', 'black']
+                colors:     ['orange', 'brown', 'black'],
+                img:        '/assets/images/gradient3.jpg'
                 }]
     }
 });

@@ -1,0 +1,11 @@
+{{yield}}
+<article class="listing">
+    <img src="{{palette.img}}">
+    <h3>{{palette.title}}</h3>
+    <h4>by {{palette.designer}}</h4>
+    <ul>
+        {{#each palette.colors as |color|}}
+            <li>{{color}}</li>
+        {{/each}}
+    </ul>
+</article>
