@@ -1,8 +1,15 @@
 {{yield}}
 <article class="listing">
-    <img src="{{palette.img}}">
+    <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+        <img src="{{palette.img}}">
+        <small>Zoom</small>
+    </a>
     <h3>{{palette.title}}</h3>
     <h4>by {{palette.designer}}</h4>
+    <div class="detail type">
+        <span>Mood:</span> {{color-palette-mood palette.mood}}
+        - {{palette.mood}}
+    </div>
     <ul>
         {{#each palette.colors as |color|}}
             <li>{{color}}</li>
