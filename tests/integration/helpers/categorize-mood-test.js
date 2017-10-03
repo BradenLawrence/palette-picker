@@ -2,7 +2,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('color-palette-mood', 'helper:color-palette-mood', {
+moduleForComponent('categorize-mood', 'helper:categorize-mood', {
   integration: true
 });
 
@@ -10,7 +10,7 @@ moduleForComponent('color-palette-mood', 'helper:color-palette-mood', {
 test('it renders', function(assert) {
   this.set('inputValue', '1234');
 
-  this.render(hbs`{{color-palette-mood inputValue}}`);
+  this.render(hbs`{{categorize-mood inputValue}}`);
 
   assert.equal(this.$().text().trim(), '1234');
 });

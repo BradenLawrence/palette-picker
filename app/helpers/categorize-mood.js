@@ -12,7 +12,7 @@ const lightColorMoods = [
   'Sunny'
 ];
 
-export function colorPaletteMood([mood]) {
+export function categorizeMood([mood]) {
   if(darkColorMoods.includes(mood)) {
       return "Dark"
   } else if(lightColorMoods.includes(mood)) {
@@ -22,4 +22,4 @@ export function colorPaletteMood([mood]) {
   }
 }
 
-export default Ember.Helper.helper(colorPaletteMood);
+export default Ember.Helper.helper(categorizeMood);
