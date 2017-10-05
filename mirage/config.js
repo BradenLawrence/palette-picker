@@ -1,9 +1,7 @@
 export default function() {
   this.namespace = '/api'
   
-  this.get('/palettes', function(){
-    return {
-      data: [{
+  let palettes =  [{
               type:       'palettes',
               id:         'sunset-at-sea',
               attributes: {
@@ -34,6 +32,15 @@ export default function() {
                 mood:       'Spooky'
               }
         }]
+  
+  this.get('/palettes', function(db, request){
+    if(request.queryParams.mood !== undefined) {
+      let filteredPalettes = palettes.filter(function(i) {
+        return i.attributes.mood.toLowerCase().indexOf(request.queryParams.mood.toLowerCase()) !== -1;
+      });
+      return { data: filteredPalettes };
+    } else {
+      return { data: palettes };
     }
   })
 }

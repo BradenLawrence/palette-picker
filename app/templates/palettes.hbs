@@ -3,8 +3,14 @@
   <h2>Welcome to Palette Picker!</h2>
   <p>There's no content yet. So until then just pick your nose.</p>
   <div class="article-list">
-      {{#each model as |paletteSet|}}
-        {{palette-frame palette=paletteSet}}
-      {{/each}}
+    {{#list-filter
+       filter=(action 'filterByMood')
+       as |filteredPalettes|}}
+      <ul class="results">
+        {{#each filteredPalettes as |filteredPalette|}}
+          <li>{{palette-frame palette=filteredPalette}}</li>
+        {{/each}}
+      </ul>
+    {{/list-filter}}
   </div>
 </div>
