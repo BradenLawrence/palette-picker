@@ -9,10 +9,12 @@
     <div class="detail type">
         <span>Mood:</span> {{categorize-mood palette.mood}}
         - {{palette.mood}}
-    </div>
-    <ul>
+    </div><br>
+    <div class="inline">
+    <ul class="inline">
         {{#each palette.colors as |color|}}
-            <li>{{color}}</li>
+            <li class="inline">{{color}}</li>
         {{/each}}
     </ul>
+    </div>
 </article>

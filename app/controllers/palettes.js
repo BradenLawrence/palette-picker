@@ -7,7 +7,6 @@ export default Ember.Controller.extend({
       if (param !== '') {
         return this.get('store').query('palette', { mood: param });
       } else {
-          console.log('else')
         return this.get('store').findAll('palette');
       }
     }

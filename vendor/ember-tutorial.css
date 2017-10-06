@@ -159,7 +159,7 @@ p {
 
 .results li {
     list-style: none;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 0;
 }
 
 .menu .results li:hover {
@@ -197,7 +197,6 @@ p {
 .jumbo img {
     height: 200px;
     position: relative;
-    top: -25px;
     right: -20px;
 }
 
@@ -342,4 +341,8 @@ p {
     width: 200px;
     position: relative;
     top: -50px;
+}
+
+.inline {
+    display: inline;
 }
