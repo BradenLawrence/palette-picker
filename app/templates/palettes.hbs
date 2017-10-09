@@ -3,11 +3,9 @@
   <h2>Welcome to Palette Picker!</h2>
   <p>There's no content yet. So until then just pick your nose.</p>
   <div class="article-list">
-    {{#list-filter
-       filter=(action 'filterByMood')
-       as |filteredPalettes|}}
+    {{#list-filter filter=(action 'filterByMood') as |results|}}
       <ul class="results">
-        {{#each filteredPalettes as |filteredPalette|}}
+        {{#each results as |filteredPalette|}}
           <li>{{palette-frame palette=filteredPalette}}</li>
         {{/each}}
       </ul>
