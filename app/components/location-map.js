@@ -6,7 +6,6 @@ export default Ember.Component.extend({
   didInsertElement() {
     this._super(...arguments);
     let location = this.get('location');
-    console.log(location)
     let mapElement = this.get('maps').getMapElement(location);
     this.$('.map-container').append(mapElement);
   }

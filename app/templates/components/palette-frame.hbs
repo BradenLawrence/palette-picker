@@ -4,7 +4,7 @@
         <img src="{{palette.img}}">
         <small>Zoom</small>
     </a>
-    <h3>{{palette.title}}</h3>
+    <h3>{{#link-to "palettes.show" palette}}{{palette.title}}{{/link-to}}</h3>
     <h4>by {{palette.designer}}</h4>
     <div class="detail type">
         <span>Mood:</span> {{categorize-mood palette.mood}}
@@ -18,5 +18,4 @@
     </ul>
     </div>
     {{location-map location=palette.city}}
-    {{log palette}}
 </article>

@@ -1,0 +1,23 @@
+<div class="jumbo show-listing">
+  <h2 class="title">{{model.title}}</h2>
+  <div class="right detail-section">
+    <div class="detail owner">
+      <strong>Designer:</strong> {{model.designer}}
+    </div>
+    <div class="detail">
+      <strong>Mood:</strong> {{categorize-mood model.mood}} - {{model.mood}}
+    </div>
+    <div class="detail">
+      <strong>Location:</strong> {{model.city}}
+    </div>
+    <div class="inline">
+    <strong>Colors:</strong>
+    <ul class="inline">
+        {{#each model.colors as |color|}}
+            <li class="inline">{{color}}</li>
+        {{/each}}
+    </ul>
+    </div>
+  </div>
+  <img src="{{model.img}}" class="palette-pic">
+</div>

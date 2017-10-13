@@ -46,4 +46,10 @@ export default function() {
       return { data: palettes };
     }
   })
+  
+  // Find and return the provided rental from our rental list above
+  this.get('/palettes/:id', function (db, request) {
+    return { data: palettes.find((palette) => request.params.id === palette.id) };
+  });
+  
 }

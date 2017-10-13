@@ -9,7 +9,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('contact');
-  this.route('palettes');
+  this.route('palettes', function() {
+    this.route('show', { path: '/:palette_id' });
+  });
 });
 
 export default Router;
