@@ -117,7 +117,7 @@ p {
 .list-filter input {
     padding: 11px;
     font-size: 18px;
-    width: 500px;
+    width: 550px;
     margin: 10px auto;
     background-color: rgba(255, 255, 255, 0.75);
     border: solid 1px lightgray;
@@ -266,7 +266,7 @@ p {
 
 .listing .map {
     position: absolute;
-    bottom: 13px;
+    top: 0px;
     right: 50px;
     height: 120px;
     width: 120px;
