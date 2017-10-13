@@ -9,7 +9,8 @@ export default function() {
                 designer:   'Lothario',
                 colors:     ['yellow', 'orange','blue'],
                 img:        '/assets/images/gradient1.jpg',
-                mood:       'Relaxing'
+                mood:       'Relaxing',
+                city:       'San Francisco'
               }
             },{
               type:       'palettes',
@@ -19,7 +20,8 @@ export default function() {
                 designer:   'Anselmo',
                 colors:     ['blue', 'pink', 'purple'],
                 img:        '/assets/images/gradient2.jpg',
-                mood:       'Fun'
+                mood:       'Fun',
+                city:       'Boston'
               }
             },{
               type:       'palettes',
@@ -29,7 +31,8 @@ export default function() {
                 designer:   'Camilla',
                 colors:     ['orange', 'brown', 'black'],
                 img:        '/assets/images/gradient3.jpg',
-                mood:       'Spooky'
+                mood:       'Spooky',
+                city:       'Mentor'
               }
         }]
   

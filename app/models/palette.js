@@ -5,5 +5,6 @@ export default DS.Model.extend({
     designer:   DS.attr(),
     colors:     DS.attr(),
     img:        DS.attr(),
-    mood:       DS.attr()
+    mood:       DS.attr(),
+    city:       DS.attr()
 });
